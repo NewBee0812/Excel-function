@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExcelSpliter</class>
+ <widget class="QDialog" name="ExcelSpliter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>拆分Excel文件</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">*{
+	font-size:16px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>請選擇要拆分的文件：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_choose_dir">
+       <property name="text">
+        <string>選擇文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_choose_path">
+     <property name="styleSheet">
+      <string notr="true">*{
+	font-size:10px
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">*{
+	font-size:16px
+}</string>
+       </property>
+       <property name="text">
+        <string>請選擇要拆分哪一列：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_rowselecter">
+       <item>
+        <property name="text">
+         <string>*****無*****</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_output_dir">
+       <property name="styleSheet">
+        <string notr="true">*{
+	font-size:10px
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_output_dir">
+       <property name="text">
+        <string>選擇輸出的目錄</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_execute_split">
+     <property name="text">
+      <string>執行拆分</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
